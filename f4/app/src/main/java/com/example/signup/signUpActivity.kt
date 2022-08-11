@@ -8,7 +8,7 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 
-class MainActivity : AppCompatActivity() {
+class signUpActivity : AppCompatActivity() {
 
     val TAG: String ="Register"
     var isExistBlank = false
