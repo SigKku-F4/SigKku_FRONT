@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">식꾸</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="add_food_spinner">
+        <item>개</item>
+        <item>g</item>
+        <item>kg</item>
+        <item>ml</item>
+        <item>l</item>
+    </string-array>
+</resources>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GroupMainActivity">
+
+    <ImageView
+        android:id="@+id/BackGroupMain"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/signup_back" />
+
+    <TextView
+        android:id="@+id/addFoodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-24dp"
+        android:layout_gravity="center"
+        android:text="그룹"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:background="#A8A5A5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efefef"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/grLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_background"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/grTv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="그룹명"
+                    android:textColor="#1976D2"
+                    android:textSize="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/grTv2"
+                    />
+
+                <TextView
+                    android:id="@+id/groupName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    tools:text="그룹명"
+                    app:layout_constraintStart_toEndOf="@+id/grTv1"
+                    app:layout_constraintTop_toTopOf="@+id/grTv1"
+                    app:layout_constraintBottom_toBottomOf="@+id/grTv1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:text="("
+                    android:textColor="#616060"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toEndOf="@+id/groupName"
+                    app:layout_constraintTop_toTopOf="@+id/groupName"
+                    app:layout_constraintBottom_toBottomOf="@+id/groupName"/>
+
+                <TextView
+                    android:id="@+id/groupCurrentSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:textColor="#616060"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    tools:text="현재그룹원수"
+                    app:layout_constraintStart_toEndOf="@+id/groupName"
+                    app:layout_constraintTop_toTopOf="@+id/groupName"
+                    app:layout_constraintBottom_toBottomOf="@+id/groupName"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:text="/"
+                    android:textColor="#616060"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toEndOf="@+id/groupName"
+                    app:layout_constraintTop_toTopOf="@+id/groupName"
+                    app:layout_constraintBottom_toBottomOf="@+id/groupName"/>
+
+                <TextView
+                    android:id="@+id/groupMaxSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:textColor="#616060"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    tools:text="최대그룹원수"
+                    app:layout_constraintStart_toEndOf="@+id/groupName"
+                    app:layout_constraintTop_toTopOf="@+id/groupName"
+                    app:layout_constraintBottom_toBottomOf="@+id/groupName"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text=")"
+                    android:textColor="#616060"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toEndOf="@+id/groupName"
+                    app:layout_constraintTop_toTopOf="@+id/groupName"
+                    app:layout_constraintBottom_toBottomOf="@+id/groupName"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/grTv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="그룹원"
+                    android:textColor="#1976D2"
+                    android:textSize="12dp"
+                    app:layout_constraintStart_toStartOf="@+id/grTv1"
+                    app:layout_constraintTop_toBottomOf="@+id/grTv1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#616060"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    tools:text="그룹원이름"
+                    app:layout_constraintStart_toEndOf="@+id/grTv2"
+                    app:layout_constraintTop_toTopOf="@+id/grTv2"
+                    app:layout_constraintBottom_toBottomOf="@+id/grTv2"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/grDialBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_add_circle_fill" />
+
+    </LinearLayout>
+
+</LinearLayout>
