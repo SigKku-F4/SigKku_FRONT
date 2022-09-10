@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SpoonActivity">
+
+    <!--    하단바-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="60dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navigation_tab"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/Spoon_Calender"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            app:srcCompat="@drawable/ic_calender_off"
+            />
+
+        <ImageView
+            android:id="@+id/Spoon_Spoon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            app:srcCompat="@drawable/ic_spoon_on"
+            android:background="@drawable/round_background"
+            android:backgroundTint="@color/colorLightGray"/>
+
+        <ImageView
+            android:id="@+id/Spoon_Group"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            app:srcCompat="@drawable/ic_group_off"/>
+
+
+        <ImageView
+            android:id="@+id/Spoon_Setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            app:srcCompat="@drawable/ic_setting_off" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="61dp"
+        android:orientation="vertical">
+
+        <!--    상단바     -->
+
+        <TextView
+            android:id="@+id/recFoodTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="추천음식"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2px"
+            android:layout_marginTop="16dp"
+            android:background="#A8A5A5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#efefef"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오늘의 음식 추천"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                />
+
+            <TextView
+                android:id="@+id/todayRec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="~가 많이 필요하다!"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/searchSpoon"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/round_background"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:paddingLeft="10dp"
+                android:gravity="start|center_vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_search" />
+
+            </LinearLayout>
+
+            <!--            첫 번째 음식-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="50dp"
+                android:paddingEnd="30dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="1"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/spoonName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="음식명"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/spoonKcal1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/colorDarkGray"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+                        android:text="00kcal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#4CAF50"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="탄수화물"
+                        />
+
+                    <TextView
+                        android:id="@+id/spoonCar1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#4CAF50"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        tools:text="00g"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#FFEB3B"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="단백질"/>
+
+                    <TextView
+                        android:id="@+id/spoonPro1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#FFEB3B"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        tools:text="00g"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="지방"/>
+
+                    <TextView
+                        android:id="@+id/spoonFat1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        tools:text="00g"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--            두 번째 음식-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="50dp"
+                android:paddingEnd="30dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="2"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/spoonName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="음식명"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/spoonKcal2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/colorDarkGray"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+                        android:text="00kcal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#4CAF50"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="탄수화물"
+                        />
+
+                    <TextView
+                        android:id="@+id/spoonCar2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#4CAF50"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        tools:text="00g"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#FFEB3B"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="단백질"/>
+
+                    <TextView
+                        android:id="@+id/spoonPro2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#FFEB3B"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        tools:text="00g"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="지방"/>
+
+                    <TextView
+                        android:id="@+id/spoonFat2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        tools:text="00g"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--            세 번째 음식-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="50dp"
+                android:paddingEnd="30dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="3"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/spoonName3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="음식명"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/spoonKcal3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/colorDarkGray"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+                        android:text="00kcal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#4CAF50"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="탄수화물"
+                        />
+
+                    <TextView
+                        android:id="@+id/spoonCar3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#4CAF50"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        tools:text="00g"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#FFEB3B"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="단백질"/>
+
+                    <TextView
+                        android:id="@+id/spoonPro3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#FFEB3B"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        tools:text="00g"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="지방"/>
+
+                    <TextView
+                        android:id="@+id/spoonFat3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        tools:text="00g"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

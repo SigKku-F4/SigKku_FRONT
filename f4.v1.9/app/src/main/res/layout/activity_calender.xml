@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.CalenderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="60dp">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/navigation_tab"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/Calender_Calender"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            app:srcCompat="@drawable/ic_calender_on"
+            android:background="@drawable/round_background"
+            android:backgroundTint="@color/colorLightGray"
+            />
+
+        <ImageView
+            android:id="@+id/Calender_Spoon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            app:srcCompat="@drawable/ic_spoon_off" />
+
+        <ImageView
+            android:id="@+id/Calender_Group"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            app:srcCompat="@drawable/ic_group_off" />
+
+
+        <ImageView
+            android:id="@+id/Calender_Setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            app:srcCompat="@drawable/ic_setting_off" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:text="캘린더"
+            android:layout_marginTop="18dp"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2px"
+            android:layout_marginTop="16dp"
+            android:background="#A8A5A5" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
+
+
+            <ImageView
+                android:id="@+id/pre_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_premonth"/>
+            <TextView
+                android:id="@+id/monthYearText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="2021.04"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:id="@+id/next_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_naxtmonth"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SUN"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MON"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TUE"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="WED"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="THU"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="FRI"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SAT"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerView"/>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

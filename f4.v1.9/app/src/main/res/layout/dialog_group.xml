@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minWidth="300dp"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <Button
+        android:id="@+id/grCreation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="그룹 생성"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/grJoin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="그룹 가입"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+</LinearLayout>
