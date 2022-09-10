@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.RecordActivity">
+
+    <!--    상단바     -->
+    <ImageView
+        android:id="@+id/back_record"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_back"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기록"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="-24dp"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:layout_marginTop="16dp"
+        android:background="#A8A5A5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--    식사 시간     -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="| 식사 시간"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="26dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/btn_breakfast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:textAlignment="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="아침" />
+
+            <RadioButton
+                android:id="@+id/btn_lunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:layout_marginLeft="14dp"
+                android:button="@null"
+                android:textAlignment="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="점심" />
+
+            <RadioButton
+                android:id="@+id/btn_dinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:layout_marginLeft="14dp"
+                android:button="@null"
+                android:textAlignment="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="저녁" />
+
+            <RadioButton
+                android:id="@+id/btn_snack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:layout_marginLeft="14dp"
+                android:button="@null"
+                android:textAlignment="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="간식" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2px"
+            android:layout_marginTop="26dp"
+            android:background="#D6D6D6" />
+
+
+        <!--    음식 사진     -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="| 음식 사진"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="26dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_food1"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="36dp"
+                android:background="#B6B6B6"/>
+            <ImageView
+                android:id="@+id/img_food2"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="10dp"
+                android:background="#B6B6B6" />
+            <ImageView
+                android:id="@+id/img_food3"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="10dp"
+                android:background="#B6B6B6" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2px"
+            android:layout_marginTop="26dp"
+            android:background="#D6D6D6" />
+
+
+        <!--    음식 추가     -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="| 음식 추가"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="26dp"
+            />
+
+        <ListView
+            android:id="@+id/addFoodlist"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp">
+        </ListView>
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2px"
+            android:layout_marginTop="26dp"
+            android:background="#D6D6D6" />
+
+        <!--    메모     -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="| 메모"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="26dp"
+            />
+
+        <EditText
+            android:id="@+id/joinName"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/selector_radio_button"
+            android:hint="내용을 입력하세요"
+            android:textSize="16dp"
+            android:gravity="top"
+            android:padding="14dp"
+            android:inputType="textImeMultiLine"
+            android:scrollHorizontally="true"/>
+
+        <Button
+            android:id="@+id/joinBtn"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="26dp"
+            android:backgroundTint="#EFEFEF"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_gravity="right"
+            android:text="저장" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

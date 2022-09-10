@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/calenderFragment"
+        android:title="캘린더"
+        android:icon="@drawable/selector_navi_calender"/>
+
+    <item
+        android:id="@+id/spoonFragment"
+        android:title="추천음식"
+        android:icon="@drawable/selector_navi_spoon"/>
+
+    <item
+        android:id="@+id/groupFragment"
+        android:title="그룹"
+        android:icon="@drawable/selector_navi_group"/>
+
+    <item
+        android:id="@+id/settingFragment"
+        android:title="설정"
+        android:icon="@drawable/selector_navi_setting"/>
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--라디오버튼이 체크되었을때-->
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#575757" />
+            <stroke android:width="2dp" android:color="#575757" />
+            <corners android:radius="7dp" />
+        </shape>
+    </item>
+    <!--라디오버튼이 해제되었을때-->
+    <item android:state_checked="false">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+            <stroke android:width="2dp" android:color="#575757" />
+            <corners android:radius="7dp" />
+        </shape>
+    </item>
+</selector>
