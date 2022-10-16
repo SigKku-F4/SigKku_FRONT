@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.AddFoodActivity"
+    android:id="@+id/addFoodFrameLayout">
+
+    <ImageView
+        android:id="@+id/BackAddFood"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/signup_back" />
+
+    <TextView
+        android:id="@+id/addFoodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-24dp"
+        android:layout_gravity="center"
+        android:text="음식추가"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorGray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efefef"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/searchFood"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/joinline"
+            android:layout_gravity="center"
+            android:paddingLeft="12dp"
+            android:ems="16"
+            android:hint="음식을 입력하세요"
+            android:inputType="textShortMessage" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/foodListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:spanCount="1"
+            android:divider="#d6d6d6"
+            android:dividerHeight="1dp"
+            tools:listitem="@layout/add_food_lv_item"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorLightGray">#EFEFEF</color>
+    <color name="colorButtonGray">#DFDFDF</color>
+    <color name="colorGray">#BABABA</color>
+    <color name="colorDarkGray">#787878</color>
+    <color name="colorLineGray">#424242</color>
+</resources>

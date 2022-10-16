@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--           음식 목록              -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp">
+        <TextView
+            android:id="@+id/add_food"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="음식1"
+            android:textSize="14dp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </View>
+
+        <TextView
+            android:id="@+id/add_gram"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="4dp"
+            android:text="그램1"
+            android:gravity="right"
+            android:textSize="14dp"
+            android:textColor="@color/black">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="14dp"
+            android:text="g"
+            android:layout_marginRight="4dp"
+            android:textColor="@color/colorDarkGray">>
+        </TextView>
+
+        <TextView
+            android:id="@+id/add_kcal"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="4dp"
+            android:textSize="14dp"
+            android:gravity="right"
+            android:text="칼로리1"
+            android:textColor="@color/black">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Kcal"
+            android:textSize="14dp"
+            android:textColor="@color/colorDarkGray">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

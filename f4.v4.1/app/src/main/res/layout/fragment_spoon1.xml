@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white">
+
+        <!--            첫 번째 음식-->
+
+        <LinearLayout
+            android:id="@+id/spoon1linear1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/spoon1Name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="center_vertical"
+                    tools:text="음식명"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/spoon1Kcal1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    tools:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="kcal / " />
+
+                <TextView
+                    android:id="@+id/spoon1G1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    tools:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="g" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="탄"
+                    />
+
+                <TextView
+                    android:id="@+id/spoon1Car1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    tools:text="00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="g"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#BAAB23"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="단"/>
+
+                <TextView
+                    android:id="@+id/spoon1Pro1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#BAAB23"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    tools:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#BAAB23"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="g"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#F44336"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="지"/>
+
+                <TextView
+                    android:id="@+id/spoon1Fat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#F44336"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    tools:text="00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="g"
+                    android:textColor="#F44336"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--            두 번째 음식-->
+
+        <LinearLayout
+            android:id="@+id/spoon1linear2"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="2"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/spoon1Name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="center_vertical"
+                    tools:text="음식명"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="18dp"                        />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/spoon1Kcal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    tools:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="kcal / " />
+
+                <TextView
+                    android:id="@+id/spoon1G2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    tools:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="g" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="탄"
+                    />
+
+                <TextView
+                    android:id="@+id/spoon1Car2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    tools:text="00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="g"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#BAAB23"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="단"/>
+
+                <TextView
+                    android:id="@+id/spoon1Pro2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#BAAB23"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    tools:text="00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#BAAB23"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="g"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#F44336"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="지"/>
+
+                <TextView
+                    android:id="@+id/spoon1Fat2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#F44336"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    tools:text="00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#F44336"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="g"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--            세 번째 음식-->
+
+        <LinearLayout
+            android:id="@+id/spoon1linear3"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="3"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/spoon1Name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    tools:text="음식명" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/spoon1Kcal3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    tools:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="kcal / " />
+
+                <TextView
+                    android:id="@+id/spoon1G3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    tools:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="g" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="탄"
+                    />
+
+                <TextView
+                    android:id="@+id/spoon1Car3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    tools:text="00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="g"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#BAAB23"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="단"/>
+
+                <TextView
+                    android:id="@+id/spoon1Pro3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#BAAB23"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    tools:text="00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#BAAB23"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="g"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:text="지"
+                    android:textColor="#F44336"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/spoon1Fat3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#F44336"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    tools:text="00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#F44336"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="g"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--            네 번째 음식-->
+
+        <LinearLayout
+            android:id="@+id/spoon1linear4"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="4"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/spoon1Name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="center_vertical"
+                    tools:text="음식명"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/spoon1Kcal4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    tools:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="kcal / " />
+
+                <TextView
+                    android:id="@+id/spoon1G4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    tools:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="g" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="탄"
+                    />
+
+                <TextView
+                    android:id="@+id/spoon1Car4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    tools:text="00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="g"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#BAAB23"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="단"/>
+
+                <TextView
+                    android:id="@+id/spoon1Pro4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#BAAB23"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    tools:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#BAAB23"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="g"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#F44336"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="지"/>
+
+                <TextView
+                    android:id="@+id/spoon1Fat4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#F44336"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    tools:text="00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#F44336"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="g"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--            다섯 번째 음식-->
+
+        <LinearLayout
+            android:id="@+id/spoon1linear5"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="5"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/spoon1Name5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="center_vertical"
+                    tools:text="음식명"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/spoon1Kcal5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    tools:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="kcal / " />
+
+                <TextView
+                    android:id="@+id/spoon1G5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    tools:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/colorDarkGray"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="g" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="탄"
+                    />
+
+                <TextView
+                    android:id="@+id/spoon1Car5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    tools:text="00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="g"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#BAAB23"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="단"/>
+
+                <TextView
+                    android:id="@+id/spoon1Pro5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#BAAB23"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    tools:text="00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#BAAB23"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="g"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#F44336"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="지"/>
+
+                <TextView
+                    android:id="@+id/spoon1Fat5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#F44336"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    tools:text="00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#F44336"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="g"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

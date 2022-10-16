@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.f4">
+
+    <!--카메라 권한 설정-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> -->
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <!--인터넷 권한 설정-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".interface.MasterApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_sk"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_sk_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.F4"
+        android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="false"
+        tools:targetApi="31">
+        <activity
+            android:name=".view.SplashActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".view.LoginActivity"
+            android:exported="true" >
+
+        </activity>
+            <activity
+                android:name=".SignUpActivity"
+                android:exported="true" />
+
+        <activity
+            android:name=".view.CalenderActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.DietDayActivity"
+            android:exported="true" >
+        </activity>
+            <activity
+                android:name=".view.RecordActivity"
+                android:exported="true"
+                android:windowSoftInputMode="adjustPan">
+            </activity>
+            <activity
+                android:name=".view.ChangeRecordActivity"
+                android:exported="true"
+                android:windowSoftInputMode="adjustPan">
+            </activity>
+            <activity
+                android:name=".view.RecordBaseActivity"
+                android:exported="false" />
+                <activity
+                    android:name=".view.AddFoodActivity"
+                    android:exported="true">
+                </activity>
+
+        <activity
+            android:name=".view.SpoonActivity"
+            android:exported="true">
+        </activity>
+            <activity
+                android:name=".view.Spoon2Activity"
+                android:windowSoftInputMode="adjustPan"
+                android:exported="true" />
+
+        <activity
+            android:name=".view.GroupActivity"
+            android:exported="true">
+        </activity>
+                <activity
+                    android:name=".view.GroupCreateActivity"
+                    android:exported="false" />
+                <activity
+                    android:name=".view.GroupSignActivity"
+                    android:exported="false" />
+            <activity
+                android:name=".view.MyGroupActivity"
+                android:exported="true">
+            </activity>
+            <activity
+                android:name=".view.MyGroupCalendarActivity"
+                android:exported="true">
+            </activity>
+            <activity
+                android:name=".view.MyGroupDietDayActivity"
+                android:exported="true">
+            </activity>
+                <activity
+                    android:name=".view.GroupSetting_L"
+                    android:exported="true">
+                </activity>
+                <activity
+                    android:name=".view.GroupSetting_M"
+                    android:exported="true">
+                </activity>
+
+        <activity
+            android:name=".view.SettingActivity"
+            android:exported="true">
+        </activity>
+            <activity
+                android:name=".view.ChangeInfoActivity"
+                android:exported="true" />
+    </application>
+
+</manifest>

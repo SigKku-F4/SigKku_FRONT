@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!--    상단바     -->
+        <ImageView
+            android:id="@+id/back_setting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-24dp"
+            android:text="정보 수정"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorGray" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/joinNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="닉네임"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/change_name"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/joinline"
+                android:ems="10"
+                android:hint="닉네임"
+                android:inputType="textPersonName"
+                android:paddingLeft="14dp"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/joinSexText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:paddingRight="3dp"
+                android:text="성별"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/change_gender_group"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="70dp">
+
+                <RadioButton
+                    android:id="@+id/change_man"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/selector_radio_button"
+                    android:button="@null"
+                    android:checked="true"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="남자"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_radio_text" />
+
+                <RadioButton
+                    android:id="@+id/change_woman"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/selector_radio_button"
+                    android:button="@null"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="여자"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_radio_text" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/joinAgeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="나이"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/change_age"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="110dp"
+                android:background="@drawable/joinline"
+                android:ems="10"
+                android:hint="나이"
+                android:inputType="number"
+                android:paddingLeft="14dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="세"
+                android:textColor="#A8A5A5"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/joinHeightText"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="20dp"
+                android:text="키"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/change_height"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="105dp"
+                android:background="@drawable/joinline"
+                android:hint="키"
+                android:inputType="number"
+                android:paddingLeft="14dp"
+                android:textSize="16dp"
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="cm"
+                android:textColor="#A8A5A5"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/joinWeightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:text="현재 체중"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/change_weight"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/joinline"
+                android:ems="10"
+                android:hint="현재 체중"
+                android:inputType="number"
+                android:paddingLeft="14dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="kg"
+                android:textColor="#A8A5A5"
+                android:textSize="18sp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/joinGoalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:text="목표 체중"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/change_goal"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/joinline"
+                android:hint="목표 체중"
+                android:inputType="number"
+                android:paddingLeft="14dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="kg"
+                android:textColor="#A8A5A5"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_change_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="@color/colorButtonGray"
+            android:text="저장"></Button>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
