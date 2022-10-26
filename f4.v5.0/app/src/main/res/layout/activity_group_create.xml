@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.GroupCreateActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="그룹 생성"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/groupCreateBackBtn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="672dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="19sp"
+            android:paddingTop="19sp"
+            android:text="그룹 이름"
+            android:textColor="#000000"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/createGroupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="19sp"
+            android:paddingTop="8sp"
+            android:hint="F4 모임"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="19sp"
+            android:paddingTop="19sp"
+            android:text="그룹 소개"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/createGroupDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="19sp"
+            android:paddingTop="8sp"
+            android:hint="다이어트는 내일부터"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2px"
+            android:layout_marginTop="22dp"
+            android:background="@color/colorGray" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프로필 설정"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="26dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/btn_profile1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_profile1"
+                android:button="@null"
+                android:textAlignment="center"/>
+
+            <RadioButton
+                android:id="@+id/btn_profile2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_profile2"
+                android:layout_marginLeft="18dp"
+                android:button="@null"
+                android:textAlignment="center"/>
+
+            <RadioButton
+                android:id="@+id/btn_profile3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_profile3"
+                android:layout_marginLeft="18dp"
+                android:button="@null"
+                android:textAlignment="center"/>
+
+            <RadioButton
+                android:id="@+id/btn_profile4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_profile4"
+                android:layout_marginLeft="18dp"
+                android:button="@null"
+                android:textAlignment="center"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_groupCreate"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="26dp"
+            android:backgroundTint="@color/colorDarkGray"
+            android:text="생성">
+        </Button>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

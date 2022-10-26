@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_weight="1"
+
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/dietFoodName"
+        android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="두부 유부초밥"
+        android:textColor="@color/black"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/dietFoodKcal"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="321Kcal"
+        android:gravity="end"/>
+</LinearLayout>
