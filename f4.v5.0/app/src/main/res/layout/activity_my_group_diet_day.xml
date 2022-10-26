@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#EFEFEF"
+    tools:context=".view.MyGroupDietDayActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/backMyGroupDietDay"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back"/>
+
+        <TextView
+            android:id="@+id/selectedCalendarName"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:text="님의 캘린더"
+            android:layout_marginTop="-24dp"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorGray" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/SelectedDateId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2022.02.09"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/black"
+            android:textSize="30sp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <FrameLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp">
+            <ImageView
+                android:id="@+id/dietStampGoodImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_good"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:id="@+id/dietStampSosoImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/img_soso"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:id="@+id/dietStampBadImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_bad"
+                android:visibility="invisible"
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:background="#A8A5A5" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#EFEFEF">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="45dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="18dp"
+            android:text="식단"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/dietTotalKcal"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="8dp"
+            android:text="총 99999Kcal"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/round_background"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="탄수화물"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/eatDietCarbohydrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0000g"
+                        android:textColor="#5FB481"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/needDietCarbohydrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/9999g"
+                        android:textColor="#5FB481"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="3dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="단백질"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/eatDietProtein"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0000g"
+                        android:textColor="#DDD169"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="16dp"
+                        />
+                    <TextView
+                        android:id="@+id/needDietProtein"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/990g"
+                        android:textColor="#DDD169"
+                        android:textSize="10sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="지방"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/eatDietFat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0000g"
+                        android:textColor="#D94848"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="16dp"
+                        />
+                    <TextView
+                        android:id="@+id/needDietFat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/240g"
+                        android:textColor="#D94848"
+                        android:textSize="10sp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dietRecycle"
+            android:layout_weight="335"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="-9dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/activity_diet_day_item"
+            ></androidx.recyclerview.widget.RecyclerView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+
+            android:id="@+id/navigation_tab"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/white">
+
+
+            <ImageView
+                android:id="@+id/Dietday_Calender"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                app:srcCompat="@drawable/ic_calender_off"
+                />
+
+            <ImageView
+                android:id="@+id/Dietday_Spoon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                app:srcCompat="@drawable/ic_spoon_off" />
+
+            <ImageView
+                android:id="@+id/Dietday_Group"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                app:srcCompat="@drawable/ic_group_on"
+                android:background="@drawable/round_background"
+                android:backgroundTint="@color/colorLightGray"
+
+                />
+
+
+            <ImageView
+                android:id="@+id/Dietday_Setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                app:srcCompat="@drawable/ic_setting_off" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
